@@ -427,6 +427,12 @@
 				loadScript('customCode', customCodeArg);
 			}
 
+            Highcharts.dateFormats = {
+              W: function (val) {
+                return 100 * val;
+              }
+            };
+
 			$(document.body).css('margin', '0px');
 
 			if (outputType === 'jpeg') {
